@@ -1,0 +1,26 @@
+{
+  "name": "mongodb-mongoose-express-unit-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest tests --detectOpenHandles",
+    "start": "nodemon server.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "faker": "^5.5.3",
+    "jest": "^26.6.3",
+    "mongoose": "^5.12.9",
+    "morgan": "^1.10.0",
+    "supertest": "^6.1.3"
+  }
+}
